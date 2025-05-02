@@ -1,0 +1,51 @@
+# --- Unity ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild*/
+[Ll]ogs/
+[Mm]emoryCaptures/
+Assets/AssetStoreTools*
+UserSettings/
+
+# --- Autogenerados por Unity/IDE ---
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+
+# --- VS Code ---
+.vscode/
+
+# --- Visual Studio ---
+.vs/
+.vsconfig
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+
+# --- Archivos temporales y de caché ---
+*.cache
+!*/.cache/          # permite carpetas con ese nombre
+*.pidb
+*.booproj
+
+# --- Node (por si usás npm o paquetes con Node.js) ---
+node_modules/
+
+# --- Python (por si usás scripts o entornos de análisis) ---
+__pycache__/
+*.pyc
+
+# --- Backups y archivos temporales ---
+~$*
+*~
+*.bak
+*.tmp
+
+# --- Otros ---
+*.dbmdl
+*.pfx
+*.publishsettings
