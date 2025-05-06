@@ -14,6 +14,11 @@ public class PlayerController : MonoBehaviour
     public float mouseSensitivityY = 2f;
     private float verticalRotation = 0f;
 
+    [Header("Camera Zoom")]
+    public float zoomSpeed = 0.05f;
+    public float minZoom = 2f;
+    public float maxZoom = 10f;
+
     private Vector2 lastTouchPosition;
     private bool isTouching = false;
 
@@ -21,6 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
         HandleCameraRotation();
+        HandleCameraZoom(); 
     }
 
     void HandleMovement()
@@ -79,5 +85,27 @@ public class PlayerController : MonoBehaviour
         verticalRotation = Mathf.Clamp(verticalRotation, -45f, 45f);
         cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
         transform.Rotate(Vector3.up * horizontal);
+    }
+
+    void HandleCameraZoom()
+    {
+        if (Input.touchCount == 2)
+        {
+            Touch touch0 = Input.GetTouch(0);
+            Touch touch1 = Input.GetTouch(1);
+
+            Vector2 prevTouch0 = touch0.position - touch0.deltaPosition;
+            Vector2 prevTouch1 = touch1.position - touch1.deltaPosition;
+
+            float prevMagnitude = (prevTouch0 - prevTouch1).magnitude;
+            float currentMagnitude = (touch0.position - touch1.position).magnitude;
+
+            float difference = currentMagnitude - prevMagnitude;
+
+            Vector3 cameraPosition = cameraTransform.localPosition;
+            cameraPosition.z += difference * zoomSpeed;
+            cameraPosition.z = Mathf.Clamp(cameraPosition.z, -maxZoom, -minZoom);
+            cameraTransform.localPosition = cameraPosition;
+        }
     }
 }

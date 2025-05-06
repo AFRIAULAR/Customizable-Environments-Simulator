@@ -167,11 +167,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50638515059edad4ab7e9b529879b5a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0.5
   characterController: {fileID: 963194230}
   cameraTransform: {fileID: 963194228}
-  mouseSensitivityX: 2
-  mouseSensitivityY: 2
+  mouseSensitivityX: 0.2
+  mouseSensitivityY: 0.2
+  zoomSpeed: 0.05
+  minZoom: 2
+  maxZoom: 10
 --- !u!1 &624046070
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,11 +512,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50638515059edad4ab7e9b529879b5a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0.5
   characterController: {fileID: 963194230}
   cameraTransform: {fileID: 963194228}
   mouseSensitivityX: 2
   mouseSensitivityY: 2
+  zoomSpeed: 0.05
+  minZoom: 2
+  maxZoom: 10
 --- !u!143 &963194230
 CharacterController:
   m_ObjectHideFlags: 0
