@@ -19,7 +19,6 @@ public class CameraController : MonoBehaviour
     {
         HandleRotation();
         HandleZoom();
-      //  FollowPlayer();
     }
 
     void HandleRotation()
@@ -101,9 +100,4 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    //void FollowPlayer()//Para que la cámara siga al jugador manteniendo la distancia y altura
-    //{        
-    //    Vector3 offset = new Vector3(0,1, -5);
-    //    transform.position = player.position + offset;
-    //}
 }

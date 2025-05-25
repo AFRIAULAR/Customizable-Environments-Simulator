@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9f45610665a6244b213af8a67d4c64, type: 3}
+  m_Name: Glass
+  m_EditorClassIdentifier: 
+  objectName: Glass
+  customMaterialsToEdit: []
+  isTextured: 0
+  texturedMaterial: {fileID: 2100000, guid: c0776710185a9a5479eb8809dd79030b, type: 2}
+  texturedElements:
+  - mainTexture: {fileID: 0}
+    normalMap: {fileID: 0}
+  defaultTiling: {x: 1, y: 1}
