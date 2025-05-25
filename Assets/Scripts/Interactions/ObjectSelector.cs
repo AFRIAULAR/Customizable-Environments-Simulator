@@ -43,6 +43,8 @@ public class ObjectSelector : MonoBehaviour
                     Debug.Log("¡Doble tap sobre objeto interactuable!");
                     obj.Interact();
                 }
+
+
             }
         }
 
