@@ -5,10 +5,10 @@ using UnityEngine;
 public class IsInteractable : MonoBehaviour
 {
     public ObjSO currentObjectSO;
+
     public void Interact()
     {
-        Debug.Log($"Interacción con: {currentObjectSO.objectName}");
-       
-        //Buscar como hacerlo con tags
+       //Debug.Log($"Interacción con: {currentObjectSO.objectName}");
+       UIManager.instance.ShowInteractionCanvas(this);
     }
 }

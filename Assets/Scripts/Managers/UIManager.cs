@@ -36,8 +36,10 @@ public class UIManager : MonoBehaviour
     public void HideInteractionCanvas()
     {
         if (interactionPanel != null)
+        {
+            Debug.Log("Ocultando panel");
             interactionPanel.SetActive(false);
-
+        }
         isUIOpen = false;
     }
 
