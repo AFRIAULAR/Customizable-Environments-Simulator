@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     public Transform player;  // player object
     public float rotationSpeed = 2f;
-
+    
     public float zoomSpeed = 0.05f;
     public float minZoom = 2f;
     public float maxZoom = 10f;
@@ -15,8 +15,11 @@ public class CameraController : MonoBehaviour
     private bool isTouching = false;
     private Vector2 lastTouchPosition;
 
+    public bool isBlocked = false;
     void Update()
     {
+        if (isBlocked) return;
+
         HandleRotation();
         HandleZoom();
     }
