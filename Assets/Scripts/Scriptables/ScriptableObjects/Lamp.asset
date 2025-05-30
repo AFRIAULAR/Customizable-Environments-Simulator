@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9f45610665a6244b213af8a67d4c64, type: 3}
+  m_Name: Lamp
+  m_EditorClassIdentifier: 
+  objectName: Lamp
+  customMaterialsToEdit: []
+  isTextured: 0
+  texturedMaterial: {fileID: 2100000, guid: 8637fd35c62fb924ebeb6f78123836d1, type: 2}
+  texturedElements:
+  - mainTexture: {fileID: 2800000, guid: 52c85e3b301cb994a95b587b7245215e, type: 3}
+    normalMap: {fileID: 0}
+  defaultTiling: {x: 1, y: 1}
