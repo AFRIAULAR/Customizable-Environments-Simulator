@@ -8523,7 +8523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63d0214bffc82f41a0e2098f711d53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentObjectSO: {fileID: 11400000, guid: 0bcae20df9139ec4cb102d2f99a3d2ef, type: 2}
+  currentObjectSO: {fileID: 11400000, guid: 62784b1992561ad4292f78e936ebb8ae, type: 2}
 --- !u!64 &1600944707
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -62,7 +62,7 @@ public class CameraController : MonoBehaviour
             player.Rotate(Vector3.up, mouseX * rotationSpeed);
 
             verticalRotation -= mouseY * rotationSpeed;
-            verticalRotation = Mathf.Clamp(verticalRotation, -45f, 45f);
+            verticalRotation = Mathf.Clamp(verticalRotation, -20f, 20f);
 
             transform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
         }

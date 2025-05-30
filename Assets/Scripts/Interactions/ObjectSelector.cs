@@ -59,7 +59,7 @@ public class ObjectSelector : MonoBehaviour
         }
         else
         {
-            // Primer tap, registramos el tiempo y la posición
+            // Primer tap tiempo-posicion
            lastTapTime = currentTime;
            lastTapPosition = currentPosition;
         }

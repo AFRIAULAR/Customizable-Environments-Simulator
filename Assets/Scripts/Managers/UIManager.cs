@@ -87,6 +87,7 @@ public class UIManager : MonoBehaviour
 
     private void OnColorSliderChanged(float _)
     {
+        SoundManager.instance.PlaySound(SoundType.SLIDER_MOVE, 0.3f);
         if (currentObj == null) return;
 
         float r = RSlider.value;
@@ -128,6 +129,7 @@ public class UIManager : MonoBehaviour
 
     public void OnCloseButtonPressed()
     {
+        SoundManager.instance.PlaySound(SoundType.BUTTON_CLOSE);
         HideInteractionCanvas();
     }
 }
